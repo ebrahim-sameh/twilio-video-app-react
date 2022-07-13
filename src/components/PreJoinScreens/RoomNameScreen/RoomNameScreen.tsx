@@ -89,6 +89,8 @@ export default function RoomNameScreen({ name, roomName, setName, setRoomName, h
               value={roomName}
               onChange={handleRoomNameChange}
             />
+                      <p>(Create or Join a Room)</p>
+
           </div>
         </div>
         <Grid container justifyContent="flex-end">
