@@ -103,12 +103,16 @@ const IntroContainer = (props: IntroContainerProps) => {
   const location = useLocation();
 
   return (
+    
     <div className={classes.background}>
       {user && location.pathname !== '/login' && <UserMenu />}
+      <TwilioLogo className={classes.twilioLogo} />
+
       <div className={classes.container}>
         <div className={classes.innerContainer}>
           <div className={classes.swooshContainer}>
             <div className={classes.logoContainer}>
+            
               <VideoLogo/>
               <Typography variant="h6" className={classes.title}>
                 FoneMe Video
